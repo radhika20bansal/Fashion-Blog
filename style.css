@@ -8,7 +8,7 @@ body{
     width: 1330px;
     border: 1px solid;
     margin: 0 auto;
-    background-color: lightgrey;
+    background-color: rgb(236, 234, 234);
 }
 nav{
     height: 80px;
@@ -115,18 +115,16 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 100;
 }
 .buttons{
+    background-color: white;
     padding: 10px;
     margin-left: 35%;
     font-size: 20px;
     font-weight: 600;
-    opacity: 0.4;
     border-radius: 5px;
 }
 .row-section2{
-    border:2px solid indigo;
-   /* content: '';
-    display: block;
-    clear: both;*/
+    padding:  10px 20px;
+    border:2px solid yellow;
 }
 .row-section2::after{
     content: '';
@@ -135,15 +133,15 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .column-left-portion{
-    width: 65%;
+    width: 64%;
     border: 1px double red;
     float: left;
 }
 .blog-entry{
-    margin: 22px;
     background-color: white;
     padding: 20px;
-    
+    margin: 20px;
+    border: 1px solid cyan;
 }
 .blogheader{
     height: 130px;
@@ -199,7 +197,7 @@ h5{
 }
 hr{
     width: 80%;
-    color: darkgrey;
+    border: 1px solid rgb(226, 224, 224);
 }
 .buttons:hover, .button-left:hover {
     background-color: lightgrey;
@@ -212,18 +210,15 @@ hr{
 }
 .column-right-portion{
     float: right;
-    width: 34%;
-    border: 1px solid cyan;
-    /*padding-left: 10px;*/
+    width: 35.6%;
+    border: 1px solid red;
 }
 #about{
-    margin: 20px 0px;
-   /* width: 100%;*/
-    height: auto;
+    margin: 20px;
     border: 3px solid darkgoldenrod;
 }
 .about-image{
-    height: 350px;
+    height: 280px;
     width: 100%;
     /*border: 1px solid red;*/
     margin-bottom: -5px;
@@ -244,20 +239,12 @@ hr{
     text-align: justify;
     margin-bottom: 0px;
 }
-
-#posts{
-    margin: 20px 0px;
-    border: 3px solid darkgoldenrod;
-}
-
 .heading{
     background-color: black;
     color: white;
     overflow: hidden;
-    /*margin-top: -32px;*/
     padding-left: 15px;
-    
-   /* border: 2px solid violet;*/
+    /* border: 2px solid violet;*/
 }
 .heading h3{
     font-weight: 300;
@@ -294,4 +281,57 @@ li img{
 .tags-head{
     font-weight: bold;
     font-size: 20px;
+}
+li:hover{
+    background-color: lightgray;
+}
+.inner-div{
+    background-color: white;
+    padding: 15px;
+}
+.advertise{
+    background-color: lightgray;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.inner-div p{
+  width: 100%;  
+   margin-bottom: 0px;
+}
+.tags-black{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    padding: 3px;
+}
+.tags-grey{
+    display: inline-block;
+    background-color: rgb(228, 220, 220);
+    font-size: 12px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    padding: 3px;
+}
+.upper-div{
+   /* border: 1px solid cyan;*/
+    margin: 10px auto;
+}
+.inner-div .upper-div img{
+   width: 160px;
+   height: 150px;
+   margin: 0px 13px;
+}
+.inner-div i{
+    display: inline-block;
+    font-weight: bolder;
+    margin-right: 5px;
 }
