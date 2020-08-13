@@ -17,6 +17,11 @@ nav{
     margin-top: 0;
     /*border: 1px solid lightgreen;*/
 }
+nav::after{
+    content: '';
+    display: block;
+    clear: both;
+}
 .logo{
     float: left;
     font-size: 50px;
@@ -118,17 +123,21 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 5px;
 }
 .row-section2{
-    width: 100%;
-    height: auto;
     border:2px solid indigo;
    /* content: '';
     display: block;
     clear: both;*/
 }
+.row-section2::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
 .column-left-portion{
     width: 65%;
     border: 1px double red;
-    /*float: left;*/
+    float: left;
 }
 .blog-entry{
     margin: 22px;
@@ -153,9 +162,9 @@ h5{
 .tags-date{
     color: rgb(143, 141, 141);
 }
-.blogcontent{
-   /* border: 1px solid cyan;*/
-}
+/*.blogcontent{
+    border: 1px solid cyan;
+}*/
 .blog-image{
     width: 100%;
     height: 500px;
@@ -200,4 +209,89 @@ hr{
     border: lightgrey;
     color: black;
     
+}
+.column-right-portion{
+    float: right;
+    width: 34%;
+    border: 1px solid cyan;
+    /*padding-left: 10px;*/
+}
+#about{
+    margin: 20px 0px;
+   /* width: 100%;*/
+    height: auto;
+    border: 3px solid darkgoldenrod;
+}
+.about-image{
+    height: 350px;
+    width: 100%;
+    /*border: 1px solid red;*/
+    margin-bottom: -5px;
+
+}
+.intro{
+    padding: 15px;
+    background-color: black;
+    color: white;
+    margin: 0px;
+    /*border: 2px solid lightsalmon;*/
+}
+.intro h2{
+    margin-top: 0px;
+    font-weight: 300;
+}
+.intro p{
+    text-align: justify;
+    margin-bottom: 0px;
+}
+
+#posts{
+    margin: 20px 0px;
+    border: 3px solid darkgoldenrod;
+}
+
+.heading{
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    /*margin-top: -32px;*/
+    padding-left: 15px;
+    
+   /* border: 2px solid violet;*/
+}
+.heading h3{
+    font-weight: 300;
+    font-size:20px ;
+}
+
+ul{
+    margin: 0px;
+    margin-left: 0px;
+   /* border: 1px solid red;*/
+    background-color: white;
+    padding: 0px;
+}
+
+ul li{
+    list-style: none;
+    /*border: 1px solid yellow;*/
+    padding: 15px;
+    border-bottom: 1px solid lightgray;
+  
+}
+li::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+li img{
+    width: 70px;
+    height: 70px;
+    float: left;
+   /* margin: 0px 10px 0px 0px;*/
+   margin-right: 15px;
+}
+.tags-head{
+    font-weight: bold;
+    font-size: 20px;
 }
