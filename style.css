@@ -1,12 +1,15 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
     font-family: 'Open Sans';
     
 }
-.container{
+#container{
     width: 1330px;
-    border: 1px solid;
+    /*border: 1px solid;*/
     margin: 0 auto;
     background-color: rgb(236, 234, 234);
 }
@@ -33,6 +36,7 @@ nav::after{
     float: right;
     /*border: 1px solid pink;*/
     height: 80px;
+    overflow: hidden;
 }
 .right-bar{
     float: left;
@@ -58,7 +62,7 @@ nav::after{
     
 }
 .large-heading{
-    /*position: relative;*/
+    position: relative;
     margin-top: 50px;
     margin-left:0;
     font-size: 50px;
@@ -86,6 +90,7 @@ h1,h2,h3,h4,h5,h6 {
     content: '';
     display: block;
     clear: both;
+    position: relative;
     
 }
 .home-image{
@@ -95,13 +100,15 @@ h1,h2,h3,h4,h5,h6 {
 }
 .left-heading{
     float: right;
-   /* border: 1px solid black;*/
+    /*border: 1px solid black;*/
     padding: 15px;
     width: 35%;
     height: 300px;
-    margin-top: -420px;
-    margin-right: 15px;
+    position: absolute;
+    bottom: 80px;
+    right: 20px;
     color: white;
+    /*overflow: hidden;*/
 }
 .large{
     text-align: center;
@@ -117,14 +124,16 @@ h1,h2,h3,h4,h5,h6 {
 .buttons{
     background-color: white;
     padding: 10px;
-    margin-left: 35%;
     font-size: 20px;
     font-weight: 600;
     border-radius: 5px;
+    /* center the button*/
+    display: block;
+    margin: 0px auto;
 }
 .row-section2{
     padding:  10px 20px;
-    border:2px solid yellow;
+    /*border:2px solid yellow;*/
 }
 .row-section2::after{
     content: '';
@@ -134,14 +143,14 @@ h1,h2,h3,h4,h5,h6 {
 
 .column-left-portion{
     width: 64%;
-    border: 1px double red;
+    /*border: 1px double red;*/
     float: left;
 }
 .blog-entry{
     background-color: white;
     padding: 20px;
     margin: 20px;
-    border: 1px solid cyan;
+    /*border: 1px solid cyan;*/
 }
 .blogheader{
     height: 130px;
@@ -202,7 +211,7 @@ hr{
 .buttons:hover, .button-left:hover {
     background-color: lightgrey;
 }
-.button-right:hover{
+.button-right:hover, .button-subs:hover{
     background-color: lightgrey;
     border: lightgrey;
     color: black;
@@ -211,11 +220,11 @@ hr{
 .column-right-portion{
     float: right;
     width: 35.6%;
-    border: 1px solid red;
+   /* border: 1px solid red;*/
 }
 #about{
     margin: 20px;
-    border: 3px solid darkgoldenrod;
+   /* border: 3px solid darkgoldenrod;*/
 }
 .about-image{
     height: 280px;
@@ -248,7 +257,7 @@ hr{
 }
 .heading h3{
     font-weight: 300;
-    font-size:20px ;
+    font-size:22px ;
 }
 
 ul{
@@ -309,7 +318,6 @@ li:hover{
     font-size: 15px;
     margin-right: 10px;
     margin-bottom: 15px;
-    overflow: hidden;
     padding: 3px;
 }
 .tags-grey{
@@ -318,7 +326,6 @@ li:hover{
     font-size: 12px;
     margin-right: 10px;
     margin-bottom: 15px;
-    overflow: hidden;
     padding: 3px;
 }
 .upper-div{
@@ -331,7 +338,50 @@ li:hover{
    margin: 0px 13px;
 }
 .inner-div i{
-    display: inline-block;
-    font-weight: bolder;
+   /* display: inline-block;*/
+    font-size: 28px;
+    margin-right: 6px;
+}
+.inner-div i:hover{
+    color: gray;
+}
+.input-text{
+    width: 95%;
+    display: block;
+    border: 1px solid lightgray;
+    height: 35px;
+    padding-left: 10px;
+}
+.button-subs{
+    background-color: rgb(240, 57, 57);
+    color: white;
+    display: block;
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+}
+footer{
+    background-color: rgb(133, 136, 138);
+    height: 150px;
+    padding: 30px;
+   /* border: 1px solid red;*/
+}
+
+footer a{
+    background-color: black;
+    width: fit-content;
+    padding: 15px;
+    display: block;
+   
+    text-decoration: none;
+    color: white;
+}
+footer i{
     margin-right: 5px;
+}
+footer p{
+    margin: 50px 0px;
+    font-weight: 500;
+    color: white;
 }
